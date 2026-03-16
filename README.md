@@ -1,40 +1,56 @@
 ﻿# MonikaAfterStory-ChineseChess-mod
 
-一个为 Monika After Story（MAS）制作的中国象棋小游戏模组。
+一个为 [Monika After Story (MAS)](https://www.monikaafterstory.com/) 制作的中国象棋小游戏模组。
 
-## 项目简介
+这个模组为 MAS 添加了一个可游玩的中国象棋内容，包含基础界面、规则判断、对弈流程以及 AI 落子逻辑。
 
-这个模组会在 MAS 的小游戏菜单中添加一个可游玩的中国象棋项目。
+## 功能特性
 
-当前仓库包含：
-- Ren'Py 脚本界面与事件入口
-- 中国象棋核心规则实现
-- AI 对弈逻辑
-- 棋盘与棋子资源
+- 在 MAS 中添加中国象棋小游戏入口
+- 提供完整的中国象棋基础规则实现
+- 支持与 AI 对弈
+- 包含棋盘、棋子与落点高亮资源
+- 使用 Ren'Py 脚本与 Python 逻辑混合实现
 
-## 目录结构
+## 项目结构
 
-- `main.rpy`：主要界面、流程与游戏入口
-- `header.rpy`：子模组注册与事件挂载
-- `engine.rpy` / `displayable.rpy` / `ai.rpy`：界面与游戏逻辑
-- `py/`：中国象棋规则与 AI 核心代码
-- `mod_assets/`：棋盘、棋子与高亮资源
+- `header.rpy`：子模组注册、事件挂载与基础持久化变量
+- `main.rpy`：主要界面、规则说明、难度选择与游戏流程入口
+- `engine.rpy` / `displayable.rpy` / `ai.rpy`：游戏显示与交互逻辑
+- `py/mas_xiangqi_core.py`：象棋规则、棋盘状态与合法走子判断
+- `py/mas_xiangqi_ai_core.py`：AI 对弈相关逻辑
+- `mod_assets/`：棋盘、棋子、高亮图片等资源文件
 
 ## 安装方法
 
-1. 打开你的 MAS 游戏目录。
-2. 进入 `game` 文件夹。
-3. 将本仓库中的文件夹和文件复制到 MAS 的 `game` 目录中。
-4. 启动游戏后，在小游戏相关入口中即可看到中国象棋内容。
+1. 确保你已经正确安装 Monika After Story。
+2. 打开 MAS 的游戏目录，并进入 `game` 文件夹。
+3. 将本仓库中的文件和文件夹复制到 MAS 的 `game` 目录中。
+4. 启动游戏后，在对应的小游戏入口中即可体验中国象棋内容。
 
-## 开发说明
+## 开发与维护
 
-这个仓库目前是源码仓库，已忽略以下缓存或编译文件：
+当前仓库主要保存源码文件，以下缓存或编译产物已被忽略，不会上传到仓库：
+
 - `*.rpyc`
 - `*.pyc`
 - `*.pyo`
 - `__pycache__/`
 
+如果你修改了项目并想再次推送到 GitHub，可使用以下 Git 流程：
+
+```powershell
+git status
+git add .
+git commit -m "Describe your changes"
+git push
+```
+
 ## 许可证
 
-当前仓库暂未添加许可证。如需公开授权，后续可再补充。
+本项目采用 [MIT License](./LICENSE) 发布。
+
+## 说明
+
+这是一个 MAS 模组项目仓库。
+如果你计划分发、修改或二次开发本项目，请先确认你使用的相关素材、资源与依赖内容符合各自的授权要求。
