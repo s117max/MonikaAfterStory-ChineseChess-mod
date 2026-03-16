@@ -25,7 +25,7 @@
 
 1. 确保你已经正确安装 Monika After Story。
 2. 打开 MAS 的游戏目录，并进入 `game` 文件夹。
-3. 将本仓库中的文件和文件夹复制到 MAS 的 `game/Submods` 目录中。
+3. 将本仓库中的文件和文件夹复制到 MAS 的 `game/Submods/mas_xiangqi` 目录中。
 4. 启动游戏后，在对应的小游戏入口中即可体验中国象棋内容。
 
 
