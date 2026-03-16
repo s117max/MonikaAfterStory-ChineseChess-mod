@@ -25,26 +25,10 @@
 
 1. 确保你已经正确安装 Monika After Story。
 2. 打开 MAS 的游戏目录，并进入 `game` 文件夹。
-3. 将本仓库中的文件和文件夹复制到 MAS 的 `game` 目录中。
+3. 将本仓库中的文件和文件夹复制到 MAS 的 `game/Submods` 目录中。
 4. 启动游戏后，在对应的小游戏入口中即可体验中国象棋内容。
 
-## 开发与维护
 
-当前仓库主要保存源码文件，以下缓存或编译产物已被忽略，不会上传到仓库：
-
-- `*.rpyc`
-- `*.pyc`
-- `*.pyo`
-- `__pycache__/`
-
-如果你修改了项目并想再次推送到 GitHub，可使用以下 Git 流程：
-
-```powershell
-git status
-git add .
-git commit -m "Describe your changes"
-git push
-```
 
 ## 许可证
 
